@@ -4,7 +4,7 @@ position: right
 title: 'Spam Detector'
 date: 2023-12-01
 categories: machine-learning
-tags: Flask ML
+tags: [Flask, ML]
 project_link: 'https://github.com/adivardhan1000/Spam-Detector/'
 featured_image: '/img/posts/job-scam-detector.jpg'
 button_text: View on GitHub

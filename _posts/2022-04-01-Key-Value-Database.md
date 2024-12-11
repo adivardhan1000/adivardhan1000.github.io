@@ -4,7 +4,7 @@ position: left
 title: 'Key-Value Database'
 date: 2022-01-01
 categories: development
-tags: database data-structures oops
+tags: [database, data-structures, oops]
 project_link: 'https://github.com/adivardhan1000/key-value-db'
 button_text: View on GitHub
 button_icon: 'github'

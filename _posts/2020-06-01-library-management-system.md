@@ -4,7 +4,7 @@ position: left
 title: 'Library Management System'
 date: 2020-06-01
 categories: development
-tags: Django webapp Python
+tags: [Django, webapp, Python]
 # featured_image: '/img/posts/library_management_system.png'
 project_link: '/projects'
 # button_icon: 'github'

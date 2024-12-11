@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Projects tagged with '{{ page.tag }}'"
+---
+{% include header.html %}
+
+<main id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <!-- Section Title and Subtitle -->
+        <h2 class="section-title text-center">Projects tagged with '{{ page.tag }}'</h2>
+        <p class="section-subtitle text-center">Explore projects related to "{{ page.tag }}"</p>
+
+        <div class="break"></div>
+
+        <!-- Filtered Posts -->
+        {% assign filtered_posts = site.posts | where_exp:"post", "post.tags contains page.tag" %}
+        {% for post in filtered_posts %}
+          <div class="wow fadeIn">
+            <div class="post">
+              <h3 class="post-title" data-toggle="collapse" data-target="#post{{ forloop.index }}">{{ post.title }}</h3>
+              <div id="post{{ forloop.index }}" class="collapse">
+                <!-- Content of the post -->
+                {% include content-right.html %}
+              </div>
+              <div class="post-tags">
+                <!-- Display post tags as clickable links -->
+                {% for tag in post.tags %}
+                  <a href="{{ site.baseurl }}/projects/tags/{{ tag | downcase | slugify }}/" class="post-tag">{{ tag }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</main>
